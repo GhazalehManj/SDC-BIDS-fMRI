@@ -1,7 +1,7 @@
 {
   "name": "SDC-BIDS-fMRI",
   "image": "mcr.microsoft.com/devcontainers/python:3.10",
-  "postCreateCommand": "pip install -r requirements.txt && pip install ipykernel",
+  "postCreateCommand": "pip install -r requirements.txt && pip install ipykernel && python -m ipykernel install --user --name=sdc_bids_fmri --display-name 'SDC-BIDS-fMRI'",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -11,4 +11,5 @@
     }
   }
 }
+
 
